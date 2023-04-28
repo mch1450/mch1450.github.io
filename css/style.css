@@ -601,95 +601,6 @@ a.icon {
   margin-top: 20px;
 }
 
-/* blog & single post section styles
-/* ========================================== */
-#blog, 
-#single-post {
-  padding-top: 4rem;
-  padding-bottom: 6rem;
-}
-
-#blog .blog-thumb {
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-
-#blog .post-format,
-#single-post .post-format {
-  padding-bottom: 10px;
-}
-
-#blog .post-format span,
-#single-post .post-format span {
-  color: #888;
-  font-weight: 400;
-  letter-spacing: 1px;
-  padding-right: 10px;
-}
-
-#blog .blog-thumb .btn {
-  border-radius: 0px;
-  padding: 10px 32px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-top: 22px;
-  transition: all 0.4s ease-in-out;
-}
-#blog .blog-thumb .btn:hover {
-  background: #111112;
-  border-color: transparent;
-  color: #ffffff;
-}
-
-#single-post blockquote {
-  margin-top: 32px;
-  letter-spacing: 2px;
-}
-
-.post-image {
-	margin: 25px 0px;
-}
-
-#single-post .blog-comment,
-#single-post .blog-comment-form {
-  margin-top: 62px;
-}
-
-#single-post .blog-comment h3,
-#single-post .blog-comment-form h3 {
-  padding-bottom: 20px;
-}
-
-#single-post .blog-comment .media {
-  padding-bottom: 22px;
-}
-
-#single-post .blog-comment .media img {
-  padding-right: 14px;
-}
-
-#single-post .blog-comment h4 {
-  font-weight: 700;
-}
-
-#single-post .blog-comment-form .form-control {
-  background: transparent;
-  border: 1px solid #eee;
-  border-radius: 0px;
-  box-shadow: none;
-  font-size: 16px;
-  margin-bottom: 16px;
-  transition: all 0.4s ease-in-out;
-}
-
-#single-post .blog-comment-form input[type="submit"] {
-  background: #111112;
-  border-color: transparent;
-  color: #ffffff;
-  height: 50px;
-}
-
-
 /* contact section styles
 /* ========================================== */
 #contact {
@@ -762,42 +673,9 @@ a.icon {
 /* ========================================== */
 footer {
   background: #141414;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
-}
-
-
-/* social icon */
-.social-icon {
-  padding: 0;
-  margin: 0;
-}
-.social-icon li {
-  list-style: none;
-  display: inline-block;
-}
-.social-icon li a {
-  border-radius: 100px;
-  border: 1px solid transparent;
-  color: #909090;
-  font-size: 18px;
-  width: 50px;
-  height: 50px;
-  line-height: 48px;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-  transition: all 0.4s ease-in-out;
-  padding: 0px;
-  margin-top: 14px;
-  margin-right: 8px;
-  margin-left: 8px;
-  position: relative;
-  top: 0px;
-}
-.social-icon li a:hover {
-  background: #ffffff;
 }
 
 /* Responsive Mobile styles
