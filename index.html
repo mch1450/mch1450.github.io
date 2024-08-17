@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+    <link rel="icon" href="img/favicon.svg?" sizes="any" type="image/svg+xml">
+    <title>Megan Cheng</title>
+</head>
+<body>
+
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <a href="#" class="logo">MC</a>
+
+      <nav class="navbar">
+         <a href="#home">Home</a>
+         <a href="#projects">Projects</a>
+         <a href="#contact">Contact</a>
+         <a href="#contact">Resume</a>
+      </nav>
+
+      <div class="nav-buttons">  
+         <i class="ri-moon-line" id="modeToggle" onclick="changeIcon(this)"></i>
+         <i class="ri-menu-line" id="hamburgerToggle"></i>
+      </div>
+
+      <!-- hamburger menu -->
+      <div id="myNav" class="overlay">
+         <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
+         <div class="overlay-content">
+           <a href="#">Home</a>
+           <a href="#projects">Projects</a>
+           <a href="#contact">Contact</a>
+           <a href="#">Resume</a>
+         </div>
+      </div>
+      
+   </header>
+
+   <section class="home" id="home">
+
+      <div class="home-content">
+         <h1>Megan Cheng</h1>
+         <h2>Web Developer & Designer</h2>
+         <p><b>Hi there!</b> <i class="ri-bard-fill"></i> My name is Megan, a recent graduate from <i>Michigan State University</i>. I am passionate about creating accessible and responsive web applications and learning about new technologies!</p>
+      </div>
+
+      <div class="prof-img">
+         <img src="img/profpic.jpg" alt="">
+      </div>
+      
+   </section>
+
+
+   <!--==================== PROJECTS ====================-->
+   
+   <section class="projects" id="projects">
+      <h2 class="section-header">Projects</h2>
+
+      <!-- Image Modal -->
+      <div id="myModal" class="modal">
+         <span class="close">&times;</span>
+         <img class="modal-content" src="img/rose_vows.png" alt="Logo Design for Bridal Boutique">
+         <div id="caption">Bridal Boutique Logo</div>
+      </div>
+
+      <!-- Project Modal -->
+      <div id="myModal2" class="modal">
+         <span class="close" onclick="closeModal()">&times;</span>
+
+         <div class="slider modal-content">
+
+            <div class="myslide titleslide">
+              <div class="txt">
+                <h3>MSU Parking Finder</h3>
+                <h4>Project Overview</h4>
+                <p>MSU Parking Finder is a mobile application that allows users to efficiently find open parking on MSU campus via proximity to destination, neighborhood selection, or through the aid of AR.</p>
+              </div>
+              <img class="slider_img" src="img/proj_msuparking.png" />
+            </div>
+      
+            <div class="myslide">
+              <div class="txt">
+                <h4>Problem Statement</h4>
+                <p>Parking on campus has been a challenging experience for many students at MSU due to the limited amount of space, expensive parking tickets, and difficulty of finding open parking spots quickly during busy times of the day.</p>
+
+                <h4>Possible Solution</h4>
+                <p>Develop a parking application that will improve the parking experience on campus by giving users ways to quickly find available parking and information about prices and ticket costs.</p>
+              </div>
+            </div>
+      
+            <div class="myslide">
+              <div class="txt">
+               <h3>Qualitative Research</h3>
+                <h4>Target User <i class="ri-group-fill"></i></h4>
+                <p>MSU student or alumni with experience or desire to park on campus</p>
+                <h4>Interview Process <i class="ri-question-answer-fill"></i></h4>
+                <p>Five participants matching the target user description were selected for a 20 minute interview regarding their experiences parking on MSU campus. The interview aimed to gain insight on student parking behavior, possible concerns regarding the way parking is structured and enforced, and potentional solutions to improve the experience.</p>
+
+              </div>
+            </div>
+      
+            <div class="myslide">
+              <div class="txt">
+               <h3>Notable Questions & Key Findings</h3>
+               <h4>Have you ever gotten a parking ticket?</h4>
+               <p class="answer">Every single participant has gotten at least one parking ticket during their time at MSU. Many expressed frustrations with how expensive they have gotten. Violations students received include parking in campus lots without proper passes and not paying for pay-by-plate meters.</p>
+
+               <h4>What is the hardest part about MSU parking?</h4>
+               <p class="answer">Participants mentioned difficulty in finding open spots to park for class. One participant reported taking up to 30 minutes to look for parking during popular time slots. Some participants risk parking tickets when it takes too long to make it for class.</p>
+              </div>
+            </div>
+
+            <div class="myslide">
+               <div class="txt">
+                 <h3>Low Fidelity prototypes</h3>
+                 <p>Early concepts include a paper prototype of a mobile app and a pair of cardboard AR glasses that would allow users to find parking within their surroundings in real time.</p>
+                 <img src="img/proj_msuparking_lowfidel.png" class="small_slider_img" alt="Low Fidelity Prototype for MSU Parking Finder">
+               </div>
+             </div>
+
+             <div class="myslide">
+               <div class="txt">
+                  <h3>High Fidelity Prototype Process</h3>
+                  <p>After evaluating the paper prototype on 5 MSU students by having them think aloud as they find and copy the address of the closest open parking lot to Wells Hall, new goals and features were planned for the next prototype.</p>
+                  <ul>
+                     <li>Incorporate the AR glasses prototype into the mobile app &rarr; <b>AR Mode</b></li>
+                     <li>Incorporate more ways to find open parking &rarr; <b>Search around destination feature, Search by neighborhood feature, AR Mode</b></li>
+                     <li>Make it simpler to locate open parking so users don't waste time going to full lots &rarr; <b>Color-coded open/full tags for lots, Live updates of parking lot capacities</b></li>
+                     <li>Allow users to quickly access parking lots they like: <b>Bookmark feature, Recent searches feature</b></li>
+                  </ul>
+                                   
+               </div>
+             </div>
+
+             <div class="myslide">
+               <div class="txt">
+                 <h3>AR Mode</h3>
+                 <p>In AR mode, users can use their phone camera to scan their surroundings. Nearby lots will pop up with live updates as users move towards or away from their location. Distance can also be adjusted via the slider.</p>
+                 <img class="smallest_slider_img" src="img/armode.gif" alt="High Fidelity Figma Prototype for MSU Parking Finder"/>
+               </div>
+             </div>
+      
+             <div class="myslide">
+               <div class="txt">
+                  <h3>High Fidelity Prototype</h3>
+                  <p class="contact-links">
+                     <a href="https://www.figma.com/design/ngmoWbG5inhiOf77QVz6ce/MSU-Parking-Finder?node-id=0-1&t=dkUtLT8g8Geg3LO3-1">Figma File<i class="ri-external-link-line"></i></a> |
+                     <a href="https://www.figma.com/proto/ngmoWbG5inhiOf77QVz6ce/MSU-Parking-Finder?node-id=3-3&t=JMrWclnWvHqianqx-8&content-scaling=fixed&hide-ui=1">Test Prototype<i class="ri-external-link-line"></i></a>
+                  </p>
+                  <img class="medium_slider_img" src="img/proj_msuparking_figma_prototype.png" alt="High Fidelity Figma Prototype for MSU Parking Finder"/>
+               </div>
+
+             </div>
+
+
+             
+            <!-- bottom dots -->
+            <a class="prev" onclick="plusSlides(-1)"><i class="ri-arrow-left-s-fill"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="ri-arrow-right-s-fill"></i></a>
+      
+            <div class="dotsbox" style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
+              <span class="dot" onclick="currentSlide(7)"></span>
+              <span class="dot" onclick="currentSlide(8)"></span>
+            </div>
+      
+          </div>
+      </div>
+         
+      </div>  
+
+
+      <div class="card-list">
+         <div class="card-item">
+             <img src="img/portfolio_thumb.png" alt="Card Image">
+             <span class="tag">HTML</span>
+             <span class="tag">CSS</span>
+             <span class="tag">JavaScript</span>
+             <h3>Portfolio Website</h3>
+             <p>Designed and created a personal portfolio website using pure HTML, CSS, and JavaScript.</p>
+             
+            <span class="card-link"><i class="ri-github-fill"></i> View</span>
+            <span class="card-link"><i class="ri-external-link-line"></i> View</span>
+      
+         </div>
+         
+         <div class="card-item">
+            <img src="img/proj_msuparking.png" alt="Card Image">
+            <span class="tag">UX/UI</span>
+            <span class="tag">Figma</span>
+            <h3>MSU Parking Finder</h3>
+            <p>Conducted user research and prototyped a mobile application that aims to improve the parking experience for MSU students.</p> 
+
+            <span class="card-link" onclick="openProjModal()"><i class="ri-external-link-line"></i> View</span>
+
+         </div>
+
+         <div class="card-item">
+            <img src="img/rose_vows_thumb.png" alt="Card Image">
+            <span class="tag">Logo</span>
+            <span class="tag">Illustrator</span>
+            <h3>Bridal Boutique Logo</h3>
+            <p>Designed and created variations of a logo for a fictional bridal boutique service "Rose Vows" using Adobe Illustrator.</p>
+            <span class="card-link" onclick="openModal()"><i class="ri-external-link-line"></i> View</span>
+         </div>
+
+         <div class="card-item">
+            <img src="img/proj_msuparking.png" alt="Card Image">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <h3>Project Name</h3>
+            <p>Conducted user research, prototyped, and evaluated a parking application that aims to improve the parking experience for MSU students on campus.</p> 
+
+            <span class="card-link"><i class="ri-github-fill"></i> View</span>
+            <span class="card-link"><i class="ri-external-link-line"></i> View</span>
+         </div>
+
+         <div class="card-item">
+             <img src="img/proj_msuparking.png" alt="Card Image">
+             <span class="tag">Editor</span>
+             <h3>Project Name</h3>
+             <p>Conducted user research, prototyped, and evaluated a parking application that aims to improve the parking experience for MSU students on campus.</p> 
+
+             <span class="card-link"><i class="ri-github-fill"></i> View</span>
+             <span class="card-link"><i class="ri-external-link-line"></i> View</span>
+         </div>
+
+         <div class="card-item">
+            <img src="img/proj_msuparking.png" alt="Card Image">
+            <span class="tag">Editor</span>
+            <h3>Project Name</h3>
+            <p>Conducted user research, prototyped, and evaluated a parking application that aims to improve the parking experience for MSU students on campus.</p> 
+            <span class="card-link"><i class="ri-github-fill"></i> View</span>
+            <span class="card-link"><i class="ri-external-link-line"></i> View</span>
+        </div>
+     </div>
+
+   </section>
+
+   <!--==================== CONTACT ====================-->
+   <section class="contact" id="contact">
+      <h2 class="section-header">Contact Me</h2>
+      <p class="contact-links">
+         <a href="mailto:chengmeg31@gmail.com"><i class="ri-mail-line"></i> chengmeg31@gmail.com</a> | 
+         <a href="https://www.linkedin.com/in/megan-cheng-4200971b4/"><i class="ri-linkedin-box-fill"></i> linkedin</a>
+      </p>
+      <p>If you have any inquiries, feel free to send me an email or fill out the form below. <br>I will get in touch as soon as possible!</p>
+      <div class="contact-form-container">
+         <form id="contactForm" action="https://formspree.io/f/mbjnzvlz" method="post">
+            <div class="form-group">
+               <label for="name">Name</label>
+               <input type="text" id="name" name="name" placeholder="Your Name" required>
+               <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-group">
+               <label for="email">Email</label>
+               <input type="email" id="email" name="email" placeholder="Your Email" required>
+               <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+               <label for="message">Message</label>
+               <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+               <span class="error-message" id="messageError"></span>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+      </form>
+     </div>
+   
+   </section>
+
+
+
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <p>Copyright &#169; 2024 Megan Cheng.</p>
+   </footer>
+
+   <script src="js/main.js"></script>
+    
+</body>
+</html>
