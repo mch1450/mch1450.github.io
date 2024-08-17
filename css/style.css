@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
 
 :root {
-    /* Dark Mode */
-    --color-surface-mixed-100: #1e3032;
-    --color-surface-mixed-200: #344446;
-    --color-surface-mixed-300: #4a595a;
-
     /** CSS DARK THEME PRIMARY COLORS */
     --color-primary-100:  #2596be;
     --color-primary-200:  #23aae4;
@@ -18,9 +13,6 @@
     --color-surface-mixed-100:  #163953;
     --color-surface-mixed-200:  #314c64;
     --color-surface-mixed-300:  #496076;
-    --color-surface-mixed-400:  #627589;
-    --color-surface-mixed-500:  #7b8b9c;
-    --color-surface-mixed-600:  #94a1af;      
 }
 
 
@@ -216,6 +208,10 @@ img {
     .navbar{
         display: none;
     }
+
+    .prof-img img{
+        box-shadow: 15px -10px var(--color-surface-mixed-300);
+    }
 }
 
 /* -------Projects------- */
@@ -263,6 +259,12 @@ img {
     border: 2px solid transparent;
     color: #fff;
     transition: .5s ease;
+}
+
+.card-item{
+    display: flex;
+    flex-direction:column; 
+    justify-content:space-between;
 }
 
 .card-item a{
@@ -532,7 +534,7 @@ footer{
     width: 100%;
     background: var(--color-surface-mixed-100);
     font-weight: 300;
-    padding: 12px 0;
+    padding: 12.45px 0;
 }
 
 .myslide {
@@ -621,16 +623,24 @@ footer{
     }
     .myslide h4{
         padding-top: 1.2rem;
-    }    
+    }
+}
 
+@media screen and (max-width: 728px) {
+    .dotsbox {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .myslide {
+        overflow: auto;
+    }
 }
 
 @media screen and (max-width:677px){
     .txt {
         padding: 25px 65px;
-    }
-    .myslide {
-        overflow: auto;
     }
 
     .myslide h4{
@@ -649,7 +659,7 @@ footer{
     width: auto;
 }
 .medium_slider_img {
-    max-height: 369px;
+    max-height: 370px;
     width: auto;
 }
 
@@ -659,7 +669,7 @@ footer{
 }
 
 .smallest_slider_img {
-    max-height: 276px;
+    max-height: 279px;
     width: auto;
 }
 
@@ -699,10 +709,6 @@ footer{
         display: block;
     }
 
-    .dotsbox {
-        display: none;
-    }
-
     .myslide h3{
         font-size: 1.5rem;
     }
@@ -712,9 +718,9 @@ footer{
         padding-top: .8rem;
     }
     
-    /* .myslide p{
-        font-size: 1rem;
-    }     */
+    .medium_slider_img {
+        padding-top: 26px;
+    }
 }
 
 /* -------light mode toggle------- */
